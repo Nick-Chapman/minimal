@@ -1,0 +1,39 @@
+name:                minimal
+version:             0.1.0.0
+description:         Template for minimal Haskell stack app.
+license:             BSD3
+author:              Nick Chapman
+maintainer:          nic@amadido.co.uk
+github:              https://github.com/Nick-Chapman/minimal.git
+
+extra-source-files:
+- README.md
+
+dependencies:
+- base >= 4.7 && < 5
+- containers
+
+default-extensions:
+- GADTs
+- GeneralizedNewtypeDeriving
+- InstanceSigs
+- LambdaCase
+- MultiWayIf
+- NamedFieldPuns
+- NondecreasingIndentation
+- NumericUnderscores
+- RankNTypes
+- ScopedTypeVariables
+
+ghc-options:
+- -Werror
+- -Wall
+- -Wno-name-shadowing
+- -threaded
+- -rtsopts
+- -with-rtsopts=-N
+
+executables:
+  minimal.exe:
+    main:                Main.hs
+    source-dirs:         src
