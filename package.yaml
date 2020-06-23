@@ -10,10 +10,18 @@ extra-source-files:
 - README.md
 
 dependencies:
+- array
 - base >= 4.7 && < 5
 - containers
+- ansi-terminal
+- haskeline
+- mtl
+- time
+- transformers
 
 default-extensions:
+- BangPatterns
+- DuplicateRecordFields
 - GADTs
 - GeneralizedNewtypeDeriving
 - InstanceSigs
@@ -24,6 +32,7 @@ default-extensions:
 - NumericUnderscores
 - RankNTypes
 - ScopedTypeVariables
+- TypeApplications
 
 ghc-options:
 - -Werror
@@ -33,7 +42,10 @@ ghc-options:
 - -rtsopts
 - -with-rtsopts=-N
 
+library:
+  source-dirs: src
+
 executables:
-  minimal.exe:
-    main:                Main.hs
-    source-dirs:         src
+  main.exe:
+    main:                app/main.hs
+    dependencies:        minimal
