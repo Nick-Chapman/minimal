@@ -10,18 +10,25 @@ extra-source-files:
 - README.md
 
 dependencies:
+- ansi-terminal
 - array
 - base >= 4.7 && < 5
+- bytestring
+- clock
 - containers
-- ansi-terminal
+- containers
+- extra
 - haskeline
 - mtl
+- text
 - time
 - transformers
+- word8
 
 default-extensions:
 - BangPatterns
 - DuplicateRecordFields
+- FlexibleContexts
 - GADTs
 - GeneralizedNewtypeDeriving
 - InstanceSigs
@@ -33,14 +40,13 @@ default-extensions:
 - RankNTypes
 - ScopedTypeVariables
 - TypeApplications
+- TypeFamilies
+- UndecidableInstances
 
 ghc-options:
 - -Werror
 - -Wall
 - -Wno-name-shadowing
-- -threaded
-- -rtsopts
-- -with-rtsopts=-N
 
 library:
   source-dirs: src
