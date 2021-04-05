@@ -12,6 +12,7 @@ extra-source-files:
 dependencies:
 - ansi-terminal
 - array
+- async
 - base >= 4.7 && < 5
 - bytestring
 - clock
@@ -20,14 +21,17 @@ dependencies:
 - extra
 - haskeline
 - mtl
+- split
 - text
 - time
 - transformers
 - word8
+- EarleyM
 
 default-extensions:
 - BangPatterns
 - DuplicateRecordFields
+- EmptyCase
 - FlexibleContexts
 - GADTs
 - GeneralizedNewtypeDeriving
