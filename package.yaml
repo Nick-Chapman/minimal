@@ -4,7 +4,7 @@ description:         Template for minimal Haskell stack app.
 license:             BSD3
 author:              Nick Chapman
 maintainer:          nic@amadido.co.uk
-github:              https://github.com/Nick-Chapman/minimal.git
+github:              Nick-Chapman/minimal.git
 
 extra-source-files:
 - README.md
