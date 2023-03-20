@@ -30,6 +30,8 @@ dependencies:
 
 default-extensions:
 - BangPatterns
+- DataKinds
+- DeriveFunctor
 - DuplicateRecordFields
 - EmptyCase
 - FlexibleContexts
@@ -41,8 +43,11 @@ default-extensions:
 - NamedFieldPuns
 - NondecreasingIndentation
 - NumericUnderscores
+- QualifiedDo
 - RankNTypes
+- RecursiveDo
 - ScopedTypeVariables
+- StandaloneDeriving
 - TypeApplications
 - TypeFamilies
 - UndecidableInstances
