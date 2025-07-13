@@ -6,51 +6,17 @@ author:              Nick Chapman
 maintainer:          nic@amadido.co.uk
 github:              Nick-Chapman/minimal.git
 
-extra-source-files:
-- README.md
-
 dependencies:
-- ansi-terminal
-- array
-- async
 - base >= 4.7 && < 5
-- bytestring
-- clock
 - containers
-- containers
-- extra
-- haskeline
-- mtl
-- split
-- text
-- time
-- transformers
-- word8
-- EarleyM
 
 default-extensions:
-- BangPatterns
-- DataKinds
-- DeriveFunctor
 - DuplicateRecordFields
-- EmptyCase
-- FlexibleContexts
 - GADTs
-- GeneralizedNewtypeDeriving
-- InstanceSigs
+- ImportQualifiedPost
 - LambdaCase
-- MultiWayIf
 - NamedFieldPuns
-- NondecreasingIndentation
-- NumericUnderscores
-- QualifiedDo
-- RankNTypes
-- RecursiveDo
 - ScopedTypeVariables
-- StandaloneDeriving
-- TypeApplications
-- TypeFamilies
-- UndecidableInstances
 
 ghc-options:
 - -Werror
