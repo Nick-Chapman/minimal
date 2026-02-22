@@ -7,21 +7,29 @@ maintainer:          nic@amadido.co.uk
 github:              Nick-Chapman/minimal.git
 
 dependencies:
+- array
 - base >= 4.7 && < 5
+- bytestring
 - containers
+- text
 
 default-extensions:
 - DuplicateRecordFields
 - GADTs
 - ImportQualifiedPost
 - LambdaCase
+- MultiWayIf
 - NamedFieldPuns
+- NumericUnderscores
+- RecordWildCards
 - ScopedTypeVariables
+# - Strict
 
 ghc-options:
 - -Werror
 - -Wall
 - -Wno-name-shadowing
+# Default optimisation is -O == -O1
 
 library:
   source-dirs: src
